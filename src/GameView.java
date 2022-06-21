@@ -67,7 +67,8 @@ public class GameView implements View {
 
         if (hasClick(MouseButton.LEFT)) {
             if (buttonsValue == 0 && captureNum == -1)
-                captureNum = (int) Math.round(minCaptureNum + Math.random() * (maxCaptureNum - minCaptureNum));
+//                captureNum = (int) Math.round(minCaptureNum + Math.random() * (maxCaptureNum - minCaptureNum));
+                captureNum = (int)Math.round(3 + (Math.random() + Math.random() + Math.random()) * 5);
             if (buttonsValue == 1) Game.show(MenuView.class);
             if (buttonsValue == 2 && time >= maxTime) {
                 turnNum++;
